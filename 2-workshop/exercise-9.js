@@ -28,6 +28,25 @@ function exercise9() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  for (let i = 1; i <= 100; i++) {
+    // 1
+    if (!(i % 3) && i % 5) console.log("Fizz");
+    else if (!(i % 5) && i % 3) console.log("Buzz");
+    else if (!(i % 3) && !(i % 5)) console.log("FizzBuzz");
+    else console.log(i);
+
+    // 2
+    // let val = "";
+    // if (!(i % 3)) val = val + "Fizz";
+    // if (!(i % 5)) val = val + "Buzz";
+    // if (i % 3 && i % 5) console.log(i);
+    // else console.log(val);
+
+    // 3
+    // let val = `${!(i % 3) ? "Fizz" : ''}${!(i % 5)? "Buzz" : ''}`;
+    // if (i % 3 && i % 5) console.log(i);
+    // else console.log(val);
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

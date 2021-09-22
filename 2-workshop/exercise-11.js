@@ -15,6 +15,16 @@ function exercise11() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  for (let i = 0; i < 8; i++) {
+    console.log(i % 2 ? "_#_#_#_#" : "#_#_#_#_");
+  }
+
+  // newline???
+  // let grid = "";
+  // for (let i = 0; i < 8; i++) {
+  //   grid = grid + ((i % 2) ? "_#_#_#_#" : "#_#_#_#_") + "\n";
+  // }
+  // console.log(grid.trim());
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

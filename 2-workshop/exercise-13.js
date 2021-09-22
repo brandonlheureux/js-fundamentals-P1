@@ -20,6 +20,36 @@ function exercise13() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  // passing values around
+  // let previousResult = 0;
+  // let currentResult = 1;
+  // let nextResult = 0;
+
+  // for (let i = 0; i < 48; i++) {
+  //   nextResult = previousResult + currentResult;
+  //   previousResult = currentResult;
+  //   currentResult = nextResult;
+  // }
+  // console.log(currentResult);
+
+  // holding all into one array
+  let fib = [0, 1];
+  for (let i = 2; i <= 49; i++) {
+    fib[i] = fib[i - 2] + fib[i - 1];
+  }
+  console.log(fib.pop());
+
+  // a memoized fib recursive function
+  // function fibonacci(num, memo) {
+  //   memo = memo || {};
+
+  //   if (memo[num]) return memo[num];
+  //   if (num <= 1) return 1;
+
+  //   return (memo[num] = fibonacci(num - 1, memo) + fibonacci(num - 2, memo));
+  // }
+  // console.log(fibonacci(48));
+
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

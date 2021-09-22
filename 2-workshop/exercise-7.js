@@ -23,6 +23,13 @@ function exercise7() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  for (let i = 0; i <= 23; i++) {
+    i < 22 && i > 5 //active hours
+      ? i === 6 || i === 12 || i === 18 //should eat?
+        ? console.log(`It's ${i}h. Time to eat!`) //then eat
+        : console.log(`It's ${i}h. Time to train!`) //then train
+      : console.log(`It's ${i}h. Time to sleep!`); //not active hours
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
