@@ -19,12 +19,13 @@ function exercise11() {
     console.log(i % 2 ? "_#_#_#_#" : "#_#_#_#_");
   }
 
-  // newline???
+  // newline??? fails since tests check for commas...
   // let grid = "";
   // for (let i = 0; i < 8; i++) {
   //   grid = grid + ((i % 2) ? "_#_#_#_#" : "#_#_#_#_") + "\n";
   // }
-  // console.log(grid.trim());
+  // remove last newline
+  // console.log(grid.slice(0, -1)); 
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
