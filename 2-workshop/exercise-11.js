@@ -15,17 +15,17 @@ function exercise11() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
-  for (let i = 0; i < 8; i++) {
-    console.log(i % 2 ? "_#_#_#_#" : "#_#_#_#_");
-  }
-
-  // newline??? fails since tests check for commas...
-  // let grid = "";
   // for (let i = 0; i < 8; i++) {
-  //   grid = grid + ((i % 2) ? "_#_#_#_#" : "#_#_#_#_") + "\n";
+  //   console.log(i % 2 ? "_#_#_#_#" : "#_#_#_#_");
   // }
+
+  // newline??? fails since tests check for commas... (fixed it)
+  let grid = "";
+  for (let i = 0; i < 8; i++) {
+    grid = grid + ((i % 2) ? "_#_#_#_#" : "#_#_#_#_") + "\n";
+  }
   // remove last newline
-  // console.log(grid.slice(0, -1)); 
+  console.log(grid.slice(0, -1)); 
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
@@ -35,7 +35,6 @@ function exercise11() {
   //
   //
 }
-
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-11
 

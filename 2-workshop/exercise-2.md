@@ -54,9 +54,9 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 ```
 4. let sentence = 'Hello world!';
 3. if (sentence.includes('Hello')) {
-2. console.log('Sentence DOES contain the word "Hello"');
+2.  console.log('Sentence DOES contain the word "Hello"');
 5. } else {
-1. console.log('Sentence DOES NOT contain the word "Hello"');
+1.  console.log('Sentence DOES NOT contain the word "Hello"');
 6. }
 
 ```
@@ -91,8 +91,8 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 2. let currentNum = 10;
 4. let min = 5;
 1. while (currentNum > min) {
-3. console.log(currentNum);
-5. currentNum = currentNum - 1;
+3.  console.log(currentNum);
+5.  currentNum = currentNum - 1;
 6. }
 
 ```
@@ -113,7 +113,7 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 1. const reversedArray = letterArray.reverse();
 7. const reversedString = reversedArray.join('');
 5. if (reversedString.includes('treasure')) {
-2. console.log('Your message:', reversedString)
+2.  console.log('Your message:', reversedString)
 6. }
 
 ```
@@ -133,8 +133,8 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 6. let count = 10;
 2. while (count > 0) {
 1. total = total + count;
-5. console.log('The total is:', total)
-4. count = count - 1;
+5.  console.log('The total is:', total)
+4.  count = count - 1;
 7. }
 
 ```
@@ -157,9 +157,9 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 8. let array = [1, 3, 7, 4, 5, 2, 1];
 7. let numberToSearchFor = 5;
 4. for (let i = 0; i < array.length; i++) {
-5. let item = array[i];
-6. if (item === numberToSearchFor) {
-3. console.log('Array includes the number!')
+5.  let item = array[i];
+6.  if (item === numberToSearchFor) {
+3.      console.log('Array includes the number!')
 1.  }
 9. }
 
