@@ -9,7 +9,8 @@ function exercise8() {
   // -----------------------------------------------------------------
   let sum = 0;
   for (let i = 0; i <= 5000; i++) {
-    if (!(i % 4)) { //if no remainder after dividing by 4 = divisible by 4
+    if (!(i % 4)) {
+      //if no remainder after dividing by 4 = divisible by 4
       sum += i;
     }
   }

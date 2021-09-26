@@ -15,17 +15,23 @@ function exercise11() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  // // without newline
   // for (let i = 0; i < 8; i++) {
   //   console.log(i % 2 ? "_#_#_#_#" : "#_#_#_#_");
   // }
 
   // newline??? fails since tests check for commas... (fixed it)
+  // from root readme:
+  //   Exercise 11 - Stretch
+  // Write a program that creates a string that represents an 8×8 grid, using newline characters to separate lines.
+
   let grid = "";
   for (let i = 0; i < 8; i++) {
     grid = grid + ((i % 2) ? "_#_#_#_#" : "#_#_#_#_") + "\n";
   }
   // remove last newline
-  console.log(grid.slice(0, -1)); 
+  console.log(grid.slice(0, -1));
+
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

@@ -15,8 +15,17 @@ function exercise10() {
   // -----------------------------------------------------------------
   for (let i = 1; i <= 7; i++) {
     console.log('#'.repeat(i))
-    
   }
+
+  // // hmm
+  // for (let i = 1; i <= 7; i++) {
+  //   let str = "";
+  //   for (let j = 1; j <= i; j++) {
+  //     str = str + "#";
+  //   }
+  //   console.log(str);
+  // }
+
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

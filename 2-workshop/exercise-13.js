@@ -20,6 +20,13 @@ function exercise13() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  // fibonnaci sequence defined as:
+  // fib (n) = fib(n - 2) + fib(n - 1)
+  // with fib(0) = 0 & fib(1) = 1
+
+  // using for loops
+  // counting forwards
+
   // passing values around
   // let previousResult = 0;
   // let currentResult = 1;
@@ -33,22 +40,47 @@ function exercise13() {
   // console.log(currentResult);
 
   // holding all into one array
-  let fib = [0, 1];
+  const fib = [0, 1];
   for (let i = 2; i <= 49; i++) {
     fib[i] = fib[i - 2] + fib[i - 1];
   }
   console.log(fib.pop());
 
+  // functions
+  // with fib(0) = 0 & fib(1) = 1
+
+  // for loop function form
+  // function fibonnaci(n) {
+  //   let fib = [0, 1];
+  //   for (let i = 2; i <= n; i++) {
+  //     fib[i] = fib[i - 2] + fib[i - 1];
+  //   }
+  //   return fib.pop();
+  // }
+  // console.log(fibonnaci(49));
+
+  // recursive as per definition
+  // backwards counting
+  // very slow!
+  // function fibonnaci(n) {
+  //   // recursion exit at lowest case
+  //   if (n <= 0) return 0
+  //   if (n === 1) return 1
+  //   return fibonnaci(n - 1) + fibonnaci(n - 2);
+  // }
+  // console.log(fibonnaci(49))
+
   // a memoized fib recursive function
+  // faster since no recalculation, data kept in memo array
   // function fibonacci(num, memo) {
-  //   memo = memo || {};
-
+  //   memo = memo || [];
+  //   // if already computed, give already computed value
   //   if (memo[num]) return memo[num];
-  //   if (num <= 1) return 1;
-
+  //   if (num < 1) return 0;
+  //   if (num === 1) return 1;
   //   return (memo[num] = fibonacci(num - 1, memo) + fibonacci(num - 2, memo));
   // }
-  // console.log(fibonacci(48));
+  // console.log(fibonacci(49));
 
   // -----------------------------------------------------------------
   // Write code between the lines (above)

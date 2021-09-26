@@ -7,7 +7,7 @@ function exercise6_1() {
   // Write code between the lines (below)
   // -----------------------------------------------------------------
   for (let i = 0; i <= 100; i++) {
-    console.log(i)
+    console.log(i);
   }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
@@ -22,4 +22,5 @@ function exercise6_1() {
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-6.1
 
+// exercise6_1();
 module.exports = exercise6_1;
