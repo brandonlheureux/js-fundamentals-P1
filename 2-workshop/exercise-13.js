@@ -32,7 +32,7 @@ function exercise13() {
   // let currentResult = 1;
   // let nextResult = 0;
 
-  // for (let i = 0; i < 48; i++) {
+  // for (let i = 1; i < 50; i++) {
   //   nextResult = previousResult + currentResult;
   //   previousResult = currentResult;
   //   currentResult = nextResult;
@@ -41,7 +41,7 @@ function exercise13() {
 
   // holding all into one array
   const fib = [0, 1];
-  for (let i = 2; i <= 49; i++) {
+  for (let i = 2; i <= 50; i++) {
     fib[i] = fib[i - 2] + fib[i - 1];
   }
   console.log(fib.pop());
@@ -57,7 +57,7 @@ function exercise13() {
   //   }
   //   return fib.pop();
   // }
-  // console.log(fibonnaci(49));
+  // console.log(fibonnaci(50));
 
   // recursive as per definition
   // backwards counting
@@ -68,7 +68,7 @@ function exercise13() {
   //   if (n === 1) return 1
   //   return fibonnaci(n - 1) + fibonnaci(n - 2);
   // }
-  // console.log(fibonnaci(49))
+  // console.log(fibonnaci(50))
 
   // a memoized fib recursive function
   // faster since no recalculation, data kept in memo array
@@ -80,7 +80,7 @@ function exercise13() {
   //   if (num === 1) return 1;
   //   return (memo[num] = fibonacci(num - 1, memo) + fibonacci(num - 2, memo));
   // }
-  // console.log(fibonacci(49));
+  // console.log(fibonacci(50));
 
   // -----------------------------------------------------------------
   // Write code between the lines (above)
