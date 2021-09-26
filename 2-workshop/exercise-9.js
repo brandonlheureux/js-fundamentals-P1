@@ -36,10 +36,10 @@ function exercise9() {
     // else console.log(i);
 
     // 1.b - less conditionals by rearranging
-    // if (!(i % 3) && !(i % 5)) console.log("FizzBuzz");
-    // else if (!(i % 3)) console.log("Fizz");
-    // else if (!(i % 5)) console.log("Buzz");
-    // else console.log(i);
+    if (!(i % 3) && !(i % 5)) console.log("FizzBuzz");
+    else if (!(i % 3)) console.log("Fizz");
+    else if (!(i % 5)) console.log("Buzz");
+    else console.log(i);
 
     // 2 with string concat operator
     // let val = "";
@@ -59,7 +59,7 @@ function exercise9() {
     // console.log(!(i % 3) || !(i % 5) ? `${!(i % 3) ? "Fizz" : ""}${!(i % 5) ? "Buzz" : ""}` : i);
 
     // 5 MY EYES, TURN BACK! 🤡
-    console.log(((!(i % 3) && "Fizz") + "" + (!(i % 5) && "Buzz")).replaceAll("false", "") || i);
+    // console.log(((!(i % 3) && "Fizz") + "" + (!(i % 5) && "Buzz")).replaceAll("false", "") || i);
   }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
